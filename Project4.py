@@ -25,12 +25,10 @@ def migrate_data():
     with open('inventory.csv') as csvfile:
         reader = csv.reader(csvfile, delimiter=",")
         keys = next(reader)
-        ordered = ([OrderedDict(zip(keys,row)) for row in reader ])
-        # for product in keys:
-        #     Product.create('product_name'=product[])
+        #ordered = ([OrderedDict(zip(keys,row)) for row in reader ])
+
         print([OrderedDict(zip(keys,row)) for row in reader ])
-        for key, value in OrderedDict.items():
-            print(value)
+
 
 
 def initialize():
