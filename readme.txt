@@ -35,3 +35,18 @@ In your dunder main method:
 Ensure you are connected to the database you created/initialized
 Ensure you load the CSV products data into the created table
 Run the application so the user can make menu choices and interact with the application.
+
+Avoiding duplicate products
+When adding product data into the database, add an additional check before that product is added so that if a duplicate product name is found, the app will save the data that was most recently updated for that existing record.
+
+Menu validation
+When entering input for the menu selection feature, add extra validation that ensures if the User enters any other character besides v, a, or b it will notify them of their error and re-prompts them again for their menu input.
+
+Menu option: v
+When selecting option v, If the User enters a product ID that does not exist, a human readable error message will be displayed, and the user will be prompted to try again.
+
+Menu option: a
+When selecting option a, if a duplicate product name is found while the product is attempting to be added to the database, the app will check to see which product entry was most recently updated and only save that data.
+
+Menu option: b
+When selecting option b, the backup CSV outpu file should contain a single header row with all the appropriate field titles.
